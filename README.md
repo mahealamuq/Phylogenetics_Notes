@@ -449,11 +449,14 @@ Protein models estimate amino acid substitution rates.
 
 Examples:
 
+```
 Dayhoff PAM
 Whelan and Goldman model
 JTT
 LG
 WAG
+
+```
 
 Protein models are useful because amino acids have different biochemical properties and do not substitute equally.
 
@@ -498,16 +501,21 @@ Parsimony is simple and intuitive but can be misleading when mutation rates vary
 
 The Small Parsimony Problem asks:
 
+```
 Given a fixed tree and labeled leaves, what labels should be assigned to internal nodes to minimize the total number of changes?
+```
 
 Input:
 
+```
 Tree T with leaves labeled by character strings
+```
 
 Output:
 
+```
 Internal node labels that minimize the parsimony score
-
+```
 ---
 
 ## 24. Fitch Algorithm
@@ -516,21 +524,48 @@ The Fitch algorithm solves the unweighted Small Parsimony Problem.
 
 Steps:
 
-Assign each leaf a set containing its observed character
-Move upward from leaves to root
-For each internal node:
+- Assign each leaf a set containing its observed character
+- Move upward from leaves to root
+- For each internal node:
+```
 If child sets overlap, take the intersection
 If child sets do not overlap, take the union and add one mutation
-Move downward from root to assign actual labels
+```
+- Move downward from root to assign actual labels
 
 Example rule:
 
+```
 If Su ∩ Sw is not empty:
     Sv = Su ∩ Sw
 
 Otherwise:
     Sv = Su ∪ Sw
     score = score + 1
+```
+
+Rules:
+```
+If child sets overlap:
+    parent set = intersection
+
+If child sets do not overlap:
+    parent set = union
+    add 1 to parsimony score
+
+Example:
+
+Child 1 = {A}
+Child 2 = {A}
+
+Parent = {A}
+Cost = 0
+Child 1 = {A}
+Child 2 = {G}
+
+Parent = {A, G}
+Cost = 1
+```
 
 ---
     
