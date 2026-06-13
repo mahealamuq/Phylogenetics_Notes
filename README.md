@@ -544,7 +544,7 @@ Otherwise:
     score = score + 1
 ```
 
-Rules:
+onother exampleRule:
 ```
 If child sets overlap:
     parent set = intersection
@@ -585,6 +585,8 @@ Where:
 - u and w = children of v
 - δ = substitution cost matrix
 - s_t(v) = minimum score if node v has character t
+
+Sankoff is useful when different substitutions have different costs.
 
 ---
 
