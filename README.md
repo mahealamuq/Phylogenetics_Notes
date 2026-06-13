@@ -237,10 +237,10 @@ Bootstrap analysis estimates confidence in tree branches.
 
 Basic idea:
 
-Resample alignment columns with replacement
-Build a tree for each resampled dataset
-Count how often each branch appears
-Report this percentage as bootstrap support
+- Resample alignment columns with replacement
+- Build a tree for each resampled dataset
+- Count how often each branch appears
+- Report this percentage as bootstrap support
 
 Example:
 
