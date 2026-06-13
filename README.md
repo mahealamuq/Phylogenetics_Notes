@@ -74,7 +74,7 @@ Human gene A and mouse gene A may be orthologs if they came from the same ancest
 
 Orthologs are often used to infer species relationships
 
-Paralogy
+**Paralogy**
 
 Paralogs are homologous genes that separated because of a gene duplication event.
 
