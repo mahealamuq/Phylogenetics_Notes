@@ -260,10 +260,13 @@ A distance matrix stores pairwise distances between sequences.
 
 Example:
 
-        Seq1   Seq2   Seq3
-Seq1    0.00   0.20   0.35
-Seq2    0.20   0.00   0.30
-Seq3    0.35   0.30   0.00
+|      | Seq1 | Seq2 | Seq3 |
+|------|------|------|------|
+| Seq1 | 0.00 | 0.20 | 0.35 |
+| Seq2 | 0.20 | 0.00 | 0.30 |
+| Seq3 | 0.35 | 0.30 | 0.00 |
+
+       
 
 ---
 
