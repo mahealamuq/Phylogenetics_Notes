@@ -124,7 +124,7 @@ Multiple sequence alignment is often the input for phylogenetic analysis.
 Before building a tree, sequences are aligned so that homologous positions are compared.
 
 Example:
-
+|---|---|
 |Seq1 | A T G C A A|
 |Seq2 | A T G T A A|
 |Seq3 | A C G C A A|
