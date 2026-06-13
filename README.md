@@ -423,18 +423,21 @@ Models may consider:
 
 The Jukes-Cantor model assumes:
 
-Equal base frequencies
-Equal mutation rates between all nucleotides
-Independent sites
-Same rate across all sites
+- Equal base frequencies
+- Equal mutation rates between all nucleotides
+- Independent sites
+- Same rate across all sites
 
 Rate matrix idea:
 
+```
       A    C    G    T
 A   -3α   α    α    α
 C    α   -3α   α    α
 G    α    α   -3α   α
 T    α    α    α   -3α
+
+```
 
 Each row sums to zero because the total probability must remain constant.
 
