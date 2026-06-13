@@ -117,6 +117,8 @@ Gene trees may include:
 
 Because of gene duplication and gene loss, a gene tree may not always match the species tree.
 
+---
+
 ## 5. Multiple Sequence Alignment
 
 Multiple sequence alignment is often the input for phylogenetic analysis.
@@ -138,7 +140,9 @@ Aligned columns allow us to identify:
 - Insertions and deletions
 - Sequence similarity
 - Evolutionary distance
-  
+
+---
+
 ## 6. Phylogenetic Tree Terminology
 
 Important tree terms:
@@ -153,6 +157,8 @@ Important tree terms:
 | Clade | Group containing an ancestor and all descendants |
 | Bifurcating tree | Tree where each internal node has two descendants |
 | Multifurcating tree | Tree where a node has more than two descendants |
+
+---
 
 ## 7. Rooted vs Unrooted Trees
 
@@ -176,6 +182,8 @@ A ----- B
    C
 ```
 Unrooted trees show similarity or relatedness, but not ancestry direction.
+
+---
 
 ## 8. Types of Phylogenetic Trees
 
@@ -221,6 +229,8 @@ A tree with branch lengths:
 
 Branch lengths usually represent the number of substitutions per site.
 
+---
+
 ## 10. Bootstrap Support
 
 Bootstrap analysis estimates confidence in tree branches.
@@ -240,6 +250,8 @@ This means that the branch appeared in 85% of bootstrap trees.
 
 Low-support branches may be collapsed in a condensed tree.
 
+---
+
 ## 11. Evolutionary Distance
 
 Evolutionary distance measures how different two sequences are.
@@ -252,6 +264,8 @@ Example:
 Seq1    0.00   0.20   0.35
 Seq2    0.20   0.00   0.30
 Seq3    0.35   0.30   0.00
+
+---
 
 ## 12. p-distance
 
@@ -278,6 +292,8 @@ Limitation:
 
 p-distance does not correct for multiple mutations at the same site.
 
+---
+
 ## 13. Poisson Distance Correction
 
 Poisson correction accounts for hidden mutations that happened more than once at the same site.
@@ -292,6 +308,8 @@ p = observed p-distance
 d = corrected evolutionary distance
 
 This correction becomes more important when sequences are highly divergent.
+
+---
 
 ## 14. Gamma Distance Correction
 
@@ -310,6 +328,8 @@ p = observed p-distance
 
 Small a values mean stronger rate variation among sites.
 
+---
+
 ## 15. Molecular Clock
 
 The molecular clock hypothesis suggests that mutations accumulate at an approximately constant rate over time.
@@ -324,6 +344,8 @@ Species-specific biology
 Natural selection
 Functional constraints
 Different rates at different sites
+
+---
 
 ## 16. Transition and Transversion
 
@@ -343,6 +365,8 @@ A or G ↔ C or T
 
 Transitions often occur more frequently than transversions.
 
+---
+
 ## 17. Codon Position and Mutation Rate
 
 Different codon positions evolve at different rates.
@@ -353,6 +377,8 @@ Codon Position	Effect
 3rd position	Often synonymous
 
 Third codon positions often evolve faster because mutations may not change the amino acid.
+
+---
 
 ## 18. Evolutionary Models
 
@@ -376,6 +402,8 @@ HKY85	Variable	Yes	Common DNA model
 TN93	Variable	Yes	More flexible
 GTR	Variable	Yes	General time-reversible model
 
+---
+
 ## 19. Jukes-Cantor Model
 
 The Jukes-Cantor model assumes:
@@ -395,6 +423,8 @@ T    α    α    α   -3α
 
 Each row sums to zero because the total probability must remain constant.
 
+---
+
 ## 20. Protein Evolution Models
 
 Protein models estimate amino acid substitution rates.
@@ -408,6 +438,8 @@ LG
 WAG
 
 Protein models are useful because amino acids have different biochemical properties and do not substitute equally.
+
+---
 
 ## 21. Tree Reconstruction Methods
 
@@ -431,6 +463,7 @@ Examples:
 - Maximum Likelihood
 - Bayesian inference
 
+---
 ## 22. Maximum Parsimony
 
 Maximum parsimony chooses the tree that requires the fewest evolutionary changes.
@@ -440,6 +473,8 @@ Basic idea:
 Best tree = tree with minimum number of mutations
 
 Parsimony is simple and intuitive but can be misleading when mutation rates vary greatly.
+
+---
 
 ## 23. Small Parsimony Problem
 
@@ -454,6 +489,8 @@ Tree T with leaves labeled by character strings
 Output:
 
 Internal node labels that minimize the parsimony score
+
+---
 
 ## 24. Fitch Algorithm
 
@@ -476,6 +513,8 @@ If Su ∩ Sw is not empty:
 Otherwise:
     Sv = Su ∪ Sw
     score = score + 1
+
+---
     
 ## 25. Sankoff Algorithm
 
@@ -495,6 +534,7 @@ Where:
 - s_t(v) = minimum score if node v has character t
 
 ---
+
 ## 26. Large Parsimony Problem
 
 The Large Parsimony Problem asks:
@@ -510,6 +550,7 @@ Example heuristic:
 Nearest Neighbor Interchange
 
 ---
+
 ## 27. Basic Phylogenetic Workflow
 
 A simple phylogenetic workflow:
@@ -521,7 +562,9 @@ A simple phylogenetic workflow:
 5. Build phylogenetic tree
 6. Estimate branch support using bootstrap
 7. Visualize and interpret the tree
+   
 ---  
+
 ## 28. Key Takeaways
     
 - Phylogenetic trees are hypotheses, not absolute truth.
@@ -534,4 +577,5 @@ A simple phylogenetic workflow:
 - Evolutionary models improve tree reconstruction.
 - Bootstrap support helps evaluate confidence in tree branches.
 - Maximum parsimony finds the tree with the fewest changes.
+  
 ---
